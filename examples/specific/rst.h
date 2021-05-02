@@ -11,9 +11,14 @@ public:
 
     This is some funky non-XML compliant text: <& !><
 
+    .. _mylabel1:
+
     .. note::
 
        This reStructuredText has been handled correctly.
+
+    See also :ref:`mylabel2`, :ref:`mylabel3` or :ref:`mylabel4`.
+
     \endrst
 
     This is just a standard verbatim block with code:
@@ -29,6 +34,9 @@ public:
     /*!
     Inserting additional reStructuredText information.
     \verbatim embed:rst
+
+    .. _mylabel2:
+
     .. note::
 
        This reStructuredText has been handled correctly.
@@ -40,6 +48,9 @@ public:
     * Inserting additional reStructuredText information.
     *
     * \verbatim embed:rst:leading-asterisk
+    *
+    * .. _mylabel3:
+    *
     *     Some example code::
     *
     *        int example(int x) {
@@ -56,6 +67,9 @@ public:
     /// @returns the same value provided in something param
     ///
     /// @verbatim embed:rst:leading-slashes
+    ///
+    /// .. _mylabel4:
+    ///
     ///    .. code-block:: c
     ///       :linenos:
     ///
